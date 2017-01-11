@@ -1,0 +1,152 @@
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    /*width: 65rem;*/
+    width: 90%;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+/* Header styles */
+
+header {
+    height: 6rem;
+}
+h1 {
+    font-size: 4rem;
+}
+.links {
+    font-size: 1.3rem;
+    font-weight: 800;
+    padding: 1rem;
+}
+.links a {
+    padding: 0.5rem;
+    text-decoration: none;
+}
+.information {
+    font-size: 1.35rem;
+    font-family:inherit;
+    color:brown;
+    width: 45%;
+    letter-spacing: 0.05rem;
+    line-height: 2rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/************** Meal details CSS **************/
+
+.meal-details {
+    border: 1px solid #000;
+    width: 45%;
+    height: 18rem;
+    display: block;
+    margin: 0.5rem auto 1.65rem auto;
+}
+.customer-charges {
+    border: 1px solid #000;
+    width: 45%;
+    height: 15rem;
+    display: block;
+    margin: 0.5rem auto 1.65rem auto;
+}
+.earnings-info {
+    border: 1px solid #000;
+    width: 45%;
+    height: 15rem;
+    display: inline-block;
+    margin: 0.5rem auto 1.65rem auto;
+}
+.meal-details h2,
+.customer-charges h2,
+.earnings-info h2 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #000;
+}
+.inputDetails {
+    text-align: center;
+    display: block;
+    width: 75%;
+    margin: 0.75rem auto;
+}
+
+/******************* Common CSS ******************/
+
+.inputDetails input,
+.inputDetails label,
+.inputDetails .inputLabel,
+.inputDetails .inputValue {
+    display: inline-block;
+}
+.inputDetails label,
+.inputDetails .inputLabel,
+.inputDetails .inputValue {
+    width: 11rem;
+    text-align: left;
+    font-size: 1.15rem;
+}
+.inputDetails .inputValue {
+    text-align: right;
+}
+.inputDetails input {
+    padding: 0.4rem;
+}
+#submitButton,
+#cancelButton,
+#resetButton {
+    font-size: 1rem;
+    margin: 0.75rem;
+    padding: 0.4rem;
+    background-color: #D8D8D8;
+    border: none;
+    border-radius: 0.25rem;
+    outline: none;
+}
+#submitButton:hover,
+#cancelButton:hover,
+#resetButton:hover {
+    cursor: pointer;
+}
+.horizontal {
+    border-bottom: 1px solid #000;
+}
+.buttonReset {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+/* Animations */
+
+.loading {
+    position: relative;
+    height: 100%;
+}
+.loading:before {
+    position: absolute;
+    z-index: 1000;
+}
+.animate-view-container {
+    position: relative;
+    min-height: 100%;
+}
+.animate-view.ng-enter {
+    transition: 0.5s linear all;
+    opacity: 0;
+    z-index: 100;
+}
+.animate-view.ng-enter.ng-enter-active {
+    opacity: 1;
+}
+.animate-view.ng-leave {
+    opacity: 1;
+    z-index: 99;
+}
+.animate-view.ng-leave.ng-leave-active {
+    opacity: 0;
+}

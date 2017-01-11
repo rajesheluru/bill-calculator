@@ -1,0 +1,18 @@
+<div class="earnings-info">
+    <h2>My Earnings Info</h2>
+    <div class="inputDetails">
+        <div class="inputLabel">Tip Total</div>
+        <div class="inputValue" id="tipTotalValue" ng-model="tipTotalValue">{{earnings.tipTotalValue | currency}}</div>
+    </div>
+    <div class="inputDetails">
+        <div class="inputLabel">Meal Count</div>
+        <div class="inputValue" id="mealCount" ng-model="mealCount">{{earnings.mealCount}}</div>
+    </div>
+    <div class="inputDetails">
+        <div class="inputLabel">Average Tip per Meal</div>
+        <div class="inputValue" id="avgTipValue" ng-model="avgTipValue">{{earnings.avgTipValue | currency}}</div>
+    </div>
+</div>
+<div class="buttonReset">
+    <button id="resetButton" ng-click="resetTransaction()">Reset</button>
+</div>

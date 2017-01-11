@@ -1,0 +1,36 @@
+<div class="meal-details">
+    <form name="enterDetails" id="enterDetails">
+        <h2>Enter the Meal Details</h2>
+        <div class="inputDetails">
+            <label>Base Meal Price: $</label>
+            <input type="number" name="mealPrice" ng-model="mealPrice" placeholder="0" required>
+        </div>
+        <div class="inputDetails">
+            <label>Tax Rate: %</label>
+            <input type="number" name="taxRate" ng-model="taxRate" placeholder="0" required>
+        </div>
+        <div class="inputDetails">
+            <label>Tip Percentage: %</label>
+            <input type="number" name="tipPercent" ng-model="tipPercent" placeholder="0" required>
+        </div>
+        <div class="inputDetails">
+            <button id="submitButton" ng-click="completeTransaction()">Submit</button>
+            <button id="cancelButton" ng-click="cancelTransaction()">Cancel</button>
+        </div>
+    </form>
+</div>
+<div class="customer-charges">
+    <h2>Customer Charges</h2>
+    <div class="inputDetails">
+        <div class="inputLabel">Subtotal</div>
+        <div class="inputValue" id="subtotalValue" ng-model="subTotal">{{subTotal | currency}}</div>
+    </div>
+    <div class="inputDetails horizontal">
+        <div class="inputLabel">Tip</div>
+        <div class="inputValue" id="tipValue" ng-model="tipValue">{{tipValue | currency}}</div>
+    </div>
+    <div class="inputDetails">
+        <div class="inputLabel">Total</div>
+        <div class="inputValue" id="totalValue" ng-model="totalValue">{{totalValue | currency}}</div>
+    </div>
+</div>
